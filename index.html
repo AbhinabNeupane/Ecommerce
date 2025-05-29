@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mini E-Commerce</title>
+  <script defer src="script.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-200">
+
+  <!-- Navbar -->
+
+  <nav class="bg-gray-800 shadow p-4 flex justify-between">
+    <h1 class="text-xl text-white font-bold logo cursor-default" onclick="navigateTo('home')">💻 PC Parts</h1>
+    <div>
+      <button onclick="navigateTo('home')" class="mr-4 text-white">Home</button>
+      <button onclick="navigateTo('cart')" class="text-white">Cart (<span id="cart-count">0</span>)</button>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+
+  <main class="p-4">
+
+    <!-- Home Page -->
+
+    <section id="home-page" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+     
+      <!-- Product cards here -->
+
+    </section>
+
+   
+    <!-- Cart Page -->
+
+    <section id="cart-page" class="hidden">
+      <h2 class="text-2xl font-semibold mb-4">🛒 Your Cart</h2>
+      <ul id="cart-items" class="mb-4"></ul>
+      <div class="font-bold">Total: $<span id="total-price">0.00</span></div>
+    </section>
+  </main>
+</body>
+</html>
